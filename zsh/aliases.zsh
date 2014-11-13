@@ -131,6 +131,35 @@ alias gbg='git bisect good'
 alias gbb='git bisect bad'
 alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
+# Git add
+alias gau='git add -u'
+
+# Git branch
+alias gbv='git b -vv'
+
+# Git diff
+alias gdt='git difftool'
+
+# Git remote
+alias grm='git remote'
+alias grml='git remote --verbose'
+alias grma='git remote add'
+alias grmx='git remote rm'
+alias grmn='git remote rename'
+alias grmu='git remote update'
+alias grmp='git remote prune'
+alias grms='git remote show'
+alias grmb='git-hub-browse'
+
+# Barnum(pt), tools from gitblit
+alias pts='pt start'
+alias ptf='pt fetch'
+alias ptc='pt checkout'
+alias ptp='pt push'
+alias ptl='pt pull'
+alias ptr='pt rm'
+alias ptpr='pt propose'
+
 # Common shell functions
 alias less='less -r'
 alias tf='tail -f'
