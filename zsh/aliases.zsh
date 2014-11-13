@@ -160,6 +160,9 @@ alias ptl='pt pull'
 alias ptr='pt rm'
 alias ptpr='pt propose'
 
+# Edit prezto git aliases
+alias ge='vim ~/.yadr/zsh/prezto/modules/git/alias.zsh'
+
 # Common shell functions
 alias less='less -r'
 alias tf='tail -f'
