@@ -131,6 +131,10 @@ alias gbg='git bisect good'
 alias gbb='git bisect bad'
 alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
+# Git log
+alias gl='git l --relative-date'
+alias gla='gl --all'
+
 # Git add
 alias gau='git add -u'
 
