@@ -139,7 +139,8 @@ alias gla='gl --all'
 alias gau='git add -u'
 
 # Git branch
-alias gbv='git b -vv'
+alias gb='git b -vv'
+alias gba='gb -a'
 
 # Git diff
 alias gdt='git difftool'
