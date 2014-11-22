@@ -36,3 +36,10 @@ dput () {
 # fig
 alias fup="fig up"
 alias fps="fig ps"
+
+# boot2docker on MacOS
+OS=`uname -s`
+if [[ "$OS" == "Darwin" ]]; then
+  alias bd="boot2docker"
+  alias bdshell="\$(boot2docker shellinit)"
+fi
