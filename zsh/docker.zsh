@@ -1,13 +1,5 @@
 
-# Prune all unreferenced images.
-docker-prune-images () {
-  images=$(docker images -a | grep '^<none>' | awk '{print $3}')
-  if [[ "$images" != "" ]]; then
-    docker rmi $images
-  fi
-}
-
-alias dpr="docker-prune-images"
+alias dpr="docker rmi \$(docker images -q -f dangling=true)"
 alias drm="docker rm"
 alias drmi="docker rmi"
 alias di="docker images"
@@ -32,10 +24,6 @@ dput () {
   local id=$(docker inspect -f "{{.Id}}" $container)
   cp -v -r $src /var/lib/docker/aufs/mnt/${id}${dst}
 }
-
-# fig
-alias fup="fig up"
-alias fps="fig ps"
 
 # boot2docker on MacOS
 OS=`uname -s`
