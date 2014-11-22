@@ -16,6 +16,10 @@ alias dcp="docker cp"
 alias dl="docker logs"
 alias did="docker inspect -f \"{{.Id}}\""
 
+dsh() {
+  docker exec -ti $1 bash
+}
+
 # Put files from host to container (the opposite of 'docker cp').
 dput () {
   local src=$1
