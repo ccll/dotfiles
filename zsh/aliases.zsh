@@ -165,6 +165,9 @@ alias ptl='pt pull'
 alias ptr='pt rm'
 alias ptpr='pt propose'
 
+# Go lang
+alias ggo='godep go'
+
 # Edit prezto git aliases
 alias ge='vim ~/.yadr/zsh/prezto/modules/git/alias.zsh'
 
