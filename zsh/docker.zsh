@@ -35,3 +35,9 @@ if [[ "$OS" == "Darwin" ]]; then
   alias bd="boot2docker"
   alias bdshell="\$(boot2docker shellinit)"
 fi
+
+# fig
+alias fup="fig build && fig up"
+alias fps="fig ps"
+alias fl="fig logs"
+alias fcl="fig stop && fig rm --force"
