@@ -28,6 +28,9 @@ alias psr='ps aux | grep ruby'
 alias cdb='cd -'
 alias cls='clear;ls'
 
+# 'cd' to git root.
+alias cdgr='cd $(git-root)'
+
 # Show human friendly numbers and colors
 alias df='df -h'
 alias du='du -h -d 2'
