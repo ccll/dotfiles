@@ -253,4 +253,15 @@ alias dbmd='spring rake db:migrate:down'
 alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
-alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
+alias brewu='brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor'
+
+# proxychains
+alias pc='proxychains4'
+
+# vagrant
+alias v='vagrant'
+alias vup='vagrant up'
+alias vssh='vagrant ssh'
+alias vs='vagrant status'
+alias vgs='vagrant global-status'
+alias vprov='vagrant provision'
