@@ -15,6 +15,8 @@ alias de="docker exec"
 alias dcp="docker cp"
 alias dl="docker logs"
 alias did="docker inspect -f \"{{.Id}}\""
+alias dm="docker-machine"
+alias dcom="docker-compose"
 
 dsh() {
   docker exec -ti $1 bash
