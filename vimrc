@@ -29,7 +29,7 @@ syntax on
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x
-" The mapleader has to be set before vundle starts loading all 
+" The mapleader has to be set before vundle starts loading all
 " the plugins.
 let mapleader=","
 
@@ -116,3 +116,66 @@ set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
+
+
+" ================ CaiLei's Settings ========================
+"
+"Do not highlight current line
+"set nocursorline
+
+"Do not show indent guides
+"let g:indent_guides_enable_on_vim_startup=0
+
+"Always show quotes in JSON files
+let g:conceallevel=0
+
+"OVERRIDE - Do not wrap around when pressing 'h' and 'l'
+"set whichwrap=b,s,<,>,[,]
+
+"OVERRIDE - Do not maximize window when switched to
+"map <C-J> <C-W>j
+"map <C-K> <C-W>k
+"map <C-L> <C-W>l
+"map <C-H> <C-W>h
+
+"Disable python-mode completion, which conflicts with YouCompleteMe
+"let g:pymode_rope_completion=1
+
+" Put preview window below
+set splitbelow
+
+" Close preview window when done
+autocmd CompleteDone * pclose
+
+" Show visual mode selection highlights
+"set hlsearch
+"hi Visual ctermbg=Grey ctermfg=Black
+"hi Visual ctermbg=White ctermfg=Black
+
+" Enable python3 for python-mode
+let g:pymode_python = 'python3'
+
+" Config python-mode
+let g:pymode_rope_completion = 1
+let g:pymode_rope_completion_bind = '<C-Space>'
+
+" Config SuperTab
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
+" Config autopep8 formater
+let g:formatdef_autopep8 = "'autopep8 - --range '.a:firstline.' '.a:lastline"
+let g:formatters_python = ['autopep8']
+
+" Invoke auto format when saving
+au BufWrite * :Autoformat
+
+" Disable python-mode breakpoint
+let g:pymode_breakpoint = 0
+
+" Change color scheme
+color default
+
+" Set hot key for localtion list
+nnoremap ,n :lnext<CR>
+nnoremap ,p :lprevious<CR>
+

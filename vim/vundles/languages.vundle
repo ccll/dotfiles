@@ -5,3 +5,6 @@ Bundle 'jtratner/vim-flavored-markdown.git'
 Bundle 'scrooloose/syntastic.git'
 Bundle 'nelstrom/vim-markdown-preview'
 Bundle 'skwp/vim-html-escape'
+Bundle 'klen/python-mode'
+Bundle "ervandew/supertab"
+Bundle "Chiel92/vim-autoformat"
